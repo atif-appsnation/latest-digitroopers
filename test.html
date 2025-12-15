@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awards Carousel - AppsNation</title>
+
+  <style>
+   
+  </style>
+</head>
+
+<body>
+  <!-- 🌟 Awards Carousel -->
+  <div class="awards-carousel my-5">
+    <div class="awards-carousel-content">
+
+      <div class="award-card wow fadeInUp">
+        <img class="award-icon" src="./assets/uploads/awards/2b92dfb40d02151f828cdbecd98a72d3.webp" alt="Award 1" />
+        <div class="content">
+          <h5>Upcity.com names AppsNation as a top mobile app company</h5>
+          <p>AppsNation - a leader in mobile app development</p>
+        </div>
+      </div>
+
+      <div class="award-card wow fadeInUp">
+        <img class="award-icon" src="./assets/uploads/awards/28f16a8e8fc80352d52f67774a78afe6.webp" alt="Award 2" />
+        <div class="content">
+          <h5>AppsNation named among top mobile app development companies</h5>
+          <p>Top app firm listed AppsNation in top mobile app development companies</p>
+        </div>
+      </div>
+
+      <div class="award-card wow fadeInUp">
+        <img class="award-icon" src="./assets/uploads/awards/b564e2ea461940ef949670e95a94b043.webp" alt="Award 3" />
+        <div class="content">
+          <h5>Top iOS App Development Company in the US</h5>
+          <p>AppsNation among 30 top iOS app developers in USA 2021</p>
+        </div>
+      </div>
+
+      <div class="award-card wow fadeInUp">
+        <img class="award-icon" src="./assets/uploads/awards/0ba32fb4e7536c7803da3bfecaa3f681.webp" alt="Award 4" />
+        <div class="content">
+          <h5>AppsNation Named Among Top Software Companies</h5>
+          <p>A leading software company in Sept 2021</p>
+        </div>
+      </div>
+
+      <div class="award-card wow fadeInUp">
+        <img class="award-icon" src="./assets/uploads/awards/d63fc3c093e9a80926308b364d11a476.webp" alt="Award 5" />
+        <div class="content">
+          <h5>App Development Companies 2021</h5>
+          <p>Top mobile app development companies in Florida</p>
+        </div>
+      </div>
+
+      <div class="award-card wow fadeInUp">
+        <img class="award-icon" src="./assets/uploads/awards/24f89bfbe025fe99c3533ff4385b44f5.webp" alt="Award 6" />
+        <div class="content">
+          <h5>Top mobile app development company in Saudi Arabia</h5>
+          <p>AppsNation recognized among top Saudi app developers</p>
+        </div>
+      </div>
+
+      <div class="award-card wow fadeInUp">
+        <img class="award-icon" src="./assets/uploads/awards/d0be8b584e00a32df772843d1dec15f4.webp" alt="Award 7" />
+        <div class="content">
+          <h5>Top mobile app development company in Saudi Arabia</h5>
+          <p>Top mobile app development company in Saudi Arabia</p>
+        </div>
+      </div>
+
+      <div class="award-card wow fadeInUp">
+        <img class="award-icon" src="./assets/uploads/awards/6e61af00a57070be9b080c376f125879.jpeg" alt="Award 8" />
+        <div class="content">
+          <h5>Top Website Design Agencies</h5>
+          <p>Best Website Design Agency Award</p>
+        </div>
+      </div>
+
+      <div class="award-card wow fadeInUp">
+        <img class="award-icon" src="./assets/uploads/awards/bf8e62ad5a89245c822e0f65a72ec500.PNG" alt="Award 9" />
+        <div class="content">
+          <h5>Top AR/VR Development Company</h5>
+          <p>AppsNation | Top AR/VR Development Company In Saudi Arabia</p>
+        </div>
+      </div>
+
+      <div class="award-card wow fadeInUp">
+        <img class="award-icon" src="./assets/uploads/awards/b6428d5d963c24f2a063e1b1ea38e0d2.webp" alt="Award 10" />
+        <div class="content">
+          <h5>AppsNation among top 8 software development companies</h5>
+          <p>Expertise lists AppsNation as top software development company</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🌟 Carousel Script -->
+  <script>
+    const carouselDuplicates = 3;
+
+    function lerp(a, b, t) {
+      return a + (b - a) * t;
+    }
+
+    function getTouchMidpoint(touches) {
+      let midpoint = { x: touches[0].clientX, y: touches[0].clientY };
+      for (let i = 1; i < touches.length; i++) {
+        const touch = touches[i];
+        midpoint.x = lerp(midpoint.x, touch.clientX, 0.5);
+        midpoint.y = lerp(midpoint.y, touch.clientY, 0.5);
+      }
+      return midpoint;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const carousel = document.querySelector(".awards-carousel");
+      const carouselContent = carousel.querySelector(".awards-carousel-content");
+      const prefersReducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+      const hasFinePointer = matchMedia("(pointer: fine)");
+      let carouselHasMouse = false;
+      let carouselTouches = 0;
+      let lastMouseX = null;
+      let lastTouchX = null;
+      let scrollDelta = 0;
+      let lastTimestamp = 0;
+
+      const handleTouchRemove = (event) => {
+        carouselTouches -= event.changedTouches.length;
+        if (carouselTouches <= 0 && !carouselHasMouse) lastTouchX = null;
+      };
+
+      const updateScroll = (timestamp) => {
+        carousel.scrollBy({ left: scrollDelta });
+        if (carouselHasMouse || carouselTouches > 0 || prefersReducedMotion.matches) {
+          scrollDelta = 0;
+        } else {
+          scrollDelta = lerp(scrollDelta, 0, 0.045);
+        }
+        lastTimestamp = timestamp;
+        requestAnimationFrame(updateScroll);
+      };
+
+      carousel.addEventListener("mousedown", () => (carouselHasMouse = true));
+      window.addEventListener("mouseup", () => {
+        carouselHasMouse = false;
+        lastMouseX = null;
+      });
+
+      window.addEventListener("mousemove", (event) => {
+        if (carouselHasMouse) {
+          if (lastMouseX !== null) scrollDelta = lastMouseX - event.x;
+          lastMouseX = event.x;
+        }
+      });
+
+      carousel.addEventListener("wheel", (event) => {
+        if (hasFinePointer.matches && event.shiftKey) {
+          event.preventDefault();
+          const scrollMultiplier = prefersReducedMotion.matches ? 2 : 0.1;
+          scrollDelta += event.deltaY * scrollMultiplier;
+        }
+      });
+
+      carousel.addEventListener("touchstart", (event) => {
+        if (lastTouchX === null) lastTouchX = getTouchMidpoint(event.touches).x;
+        carouselTouches += event.changedTouches.length;
+      });
+
+      window.addEventListener("touchmove", (event) => {
+        if (lastTouchX !== null) {
+          const touchMidpoint = getTouchMidpoint(event.touches);
+          scrollDelta = -(touchMidpoint.x - lastTouchX);
+          lastTouchX = touchMidpoint.x;
+        }
+      });
+
+      window.addEventListener("touchend", handleTouchRemove);
+      window.addEventListener("touchcancel", handleTouchRemove);
+
+      carousel.addEventListener("scroll", () => {
+        const carouselRect = carouselContent.getBoundingClientRect();
+        if (carouselRect.left > window.innerWidth) {
+          carousel.scrollLeft += carouselRect.width;
+        } else if (carouselRect.right < 0) {
+          carousel.scrollLeft -= carouselRect.width;
+        }
+      });
+
+      for (let i = 0; i < carouselDuplicates; i++) {
+        const carouselDuplicate = carouselContent.cloneNode(true);
+        carouselDuplicate.ariaHidden = true;
+        carouselDuplicate.querySelectorAll("a").forEach((el) => (el.tabIndex = "-1"));
+        carousel.prepend(carouselDuplicate);
+        carousel.append(carouselDuplicate.cloneNode(true));
+      }
+
+      carousel.scrollLeft += carouselContent.offsetWidth * carouselDuplicates;
+      requestAnimationFrame(updateScroll);
+    });
+  </script>
+</body>
+</html>

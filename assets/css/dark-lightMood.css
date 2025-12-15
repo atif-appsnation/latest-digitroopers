@@ -1,0 +1,330 @@
+ 
+/* Theme Toggle Button */
+.light {
+   
+  font-size: 2rem;
+  font-family: "IconicFill", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.light:after {
+  content: "☾";
+  color: #0676ff;
+}
+
+.night .light:after {
+  content: "☀";
+  color: #ffffff;
+}
+
+/* Dark Theme */
+.night body {
+  background:  #000F22;
+  color: #ffffff;
+}
+.night body #service-text{
+  color: #ec2b19;
+}
+.night body .bg-dark{
+  color: #ffffff;
+background-color: #07192F !important;
+}
+
+ 
+ 
+
+.night body .service-item{
+  background-color: #07192F !important;
+}
+.night body .service-item:hover {
+	background: #ec2b19 !important;
+	border: 1px solid #ec2b19;
+}
+.night body .awards-wrapper .awards-item .awards-name{
+  color: white;
+}
+.night body .awards-item .awards-action .btn-arrow{
+  border-color: white;
+}
+.night body .btn-arrow:after {
+  border-color: white;
+}
+.night body  .btn-arrow svg path {
+	stroke: #ffffff !important;
+	transition: all 0.3s ease-in-out;
+}
+.night body .btn-arrow:hover svg path, .btn-arrow:focus svg path, .btn-arrow:focus-visible svg path, .btn-arrow:active svg path {
+	stroke: #ec2b19 !important;
+}
+.night body .action-box{
+  background-color: #ec2b19;
+}
+.night body .testimonial-content p{
+  color: white;
+}
+.night body .testimonial-wrapper .testimonial-author .author-info .author-position {
+	color: white;
+}
+
+.night body .bg-dark p {
+	color: #ffffff ;
+}
+
+.night body .p-black{
+	color: #ffffff !important;
+}
+
+
+.night body .contact-icon-box .icon-box-info ul li a {
+	color: #ffffff;
+}
+
+.night body .contact-icon-box .icon-box-info .widget-social .social-icon li a{
+  color: #ffffff;
+  
+
+}
+
+.night body .marquee-wrapper .marquee-inner .marquee-item .title{
+      -webkit-text-stroke: 1px #ffffff;
+}
+.night body .marquee-wrapper .marquee-inner .marquee-item:hover .title {
+	color: #0E36A8;
+}
+
+
+.night body .site-footer{
+   background-color: #07192F;
+}
+.night body .contact-info-box ul li{
+      color: #ffffff;
+}
+
+
+.night body .contact-info-box ul li a{
+  color: #ffffff;
+}
+
+
+.night body .site-footer .widget .widget-title {
+	color: #ffffff;
+}
+.night body .site-footer .widget-menu .widget-title {
+  color: white;
+}
+.night body .widget-menu ul li a {
+  color: white;
+}
+
+
+.night body .section-title .title{
+  color: white;
+  border: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.night body .contact-form-box {
+	background-color: #cb0707;
+}
+
+.night body .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+	background-color: #000f2200;
+	color: #cb0707;
+ 
+}
+
+.night body .accordion .accordion-item .accordion-header .accordion-button {
+  color: white;
+}
+
+
+
+.night body .counter .counter-number span {
+	color: #ffffff;
+}
+.night body .counter .counter-info .counter-title {
+	color: rgb(255, 255, 255);
+}
+
+
+.night body .left-border{
+	display: none;
+}
+.night body .end-border{
+	display: none;
+}
+.night body .start-border{
+display: none;
+}
+.night .section-title .title-border {
+	padding-left:  0px;
+} 
+
+.night body .pgsel-history-slider-wrapper .history-items .history-item{
+  background-color: #07192F !important  ;
+}
+.night body .pgsel-history-slider-wrapper .history-items .history-item .history-title{
+  color: white;
+}
+.night body .title-process{
+  color: white;
+  border: none;
+}
+
+.night body  .find-job-wrapper .find-job-item .job-details .job-time{
+	color: #ffffff;
+}
+
+ 
+.night body .find-job-wrapper .find-job-item .job-details .job-location {
+	color: #ffffff !important;
+}
+.night body .find-job-wrapper .find-job-item .job-title .awards-name{
+  color: white;
+}
+.night body .glass{
+  background-color: #07192F;
+}
+
+
+.night body .widget-menu .widget-title {
+	color: white;
+}
+
+.night body .action-box .action-box-content h5 {
+	color: #ffffff;
+}
+
+.night  body .action-box.action-box-style-03 .action-box-content .contact-details .contact-info a {
+  color: white;
+}
+.night  body .action-box.action-box-style-03 .action-box-content .contact-details .contact-info a:hover {
+	color: #ec2b19;
+}
+
+
+.night body .list-wrapper .list h6{
+  color: white;
+}
+.night body .accordion.accordion-style-pgs-two .accordion-item .accordion-collapse .accordion-body {
+  color: white;
+}
+ 
+.night body .white-icon {
+    width: 60px;
+    filter: invert(1);
+}
+.night body .filters-group button {
+	color: #ffffff;
+}
+.night body .filters-group button.active {
+	color: #ec2b19;
+	border: 1px solid #ec2b19;
+}
+
+.night body .blog-post .blog-post-info .post-title a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.night body .blog-post .blog-post-info .post-title a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+.night body .blog-post .post-meta ul li a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+.night body .widget-social ul.social-icon li a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+.night body .post-social.widget-social ul.social-icon li a.social-share i{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+.night body .sidebar .widget{
+  border: 1px white solid;
+}
+.night body .widget-categories .widget-title{
+  color:  #cb0707;
+  
+}
+.night body .widget-categories .categories-list li a {
+	color: #ffffff;
+	
+	
+}
+.night body .widget-recent-posts .recent-posts .post-info .post-title {
+	color: #ffffff;
+}
+.night body .widget-recent-posts .recent-posts .post-info .post-date {
+	color: #cb0707;
+}
+.night body .widget-recent-posts .widget-title {
+	color: #cb0707;
+}
+.night body .contact-info-box .title {
+	color: #cb0707;
+}
+.night body   .tags-widget .tag-list li a {
+	color: #ffffff;
+}
+.night body  .tags-widget .tag-list li a:hover {
+	color: #cb0707;
+}
+.night body  .tags-widget .widget-title {
+	color: #cb0707;
+}
+.night body  .widget-newsletter .widget-title {
+	color: #cb0707;
+}
+.night body .widget-search .search .form-control {
+	color: #ffffff;
+}
+.night body .widget-newsletter .newsletter-form .form-control {
+	color: #ffffff;
+}
+.night body .carousel-content .card{
+	background-color: #07192F;
+}
+.night body .card  .contant h5  {
+	color: white;
+}
+.night body .card  .contant  p {
+	color: white;
+}
+
+
+.night body .tech-card{
+	background-color: #07192F;
+}
+.night body .tech-card-header i{
+	 color: #ffffff;
+}
+.night body .tech-card-header h3{
+	 color: #ffffff;
+}
+.night body .tech-item span{
+	 color: #ffffff;
+}
+.night body .hamburger .hamburger-container .hamburger-inner {
+	 background-color: #ffffff;
+}
+.night body  .hamburger .hamburger-container .hamburger-inner:before {
+	 background-color: #ffffff;
+}
+.night body .hamburger .hamburger-container .hamburger-inner:after{
+	 background-color: #ffffff;
+}
+.night body .header .navbar .navbar-nav .nav-item.active .nav-link{
+color: #ffffff;
+}
+
+
+.night body form.form-style-border .form-control{
+	border:  1px solid white;
+}
