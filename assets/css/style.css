@@ -2817,7 +2817,7 @@ section:has(.rounded-section) {
 
 .my-shuffle-container.columns-3 .grid-item {
 	width: 33.33333333%;
-	padding: 0px 10px;
+	padding: 0px 10px 10px;
 }
 
 .my-shuffle-container.columns-4 .grid-item {
