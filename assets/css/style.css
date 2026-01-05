@@ -8576,3 +8576,9 @@ body:has(#search.open):before {
     height: auto;
     overflow: inherit;
 } */
+
+.case-studies-img img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
