@@ -5,10 +5,11 @@
 	--white-color: #ffffff;
 	--black-color: #000000;
 	--bg-color: #f5f5f5;
+	--font-family: "Jost", sans-serif
 }
 
 body {
-	font-family: "Jost", sans-serif;
+	font-family: var(--font-family);
 	font-weight: normal;
 	font-style: normal;
 	font-size: 18px;
@@ -49,8 +50,8 @@ body {
 
 .glass {
 	background-color: #edd6d638;
-	border-radius: 20px;
-	padding: 10px;
+	border-radius: 30px;
+	padding: 10px 15px;
 	padding-bottom: 10px;
 	margin-top: 12px;
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
@@ -108,7 +109,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	font-weight: 700;
 	color: #000000;
 	margin: 0px 0px 1rem;
@@ -284,7 +285,7 @@ figure.caption.alignright {
 	margin-bottom: 20px;
 	display: inline-block;
 	text-transform: uppercase;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 }
 
 .title-process {
@@ -1145,7 +1146,7 @@ section:has(.rounded-section) {
 .accordion.accordion-style-pgs-two .accordion-item .accordion-header .accordion-button {
 	font-size: 20px;
 	border-radius: 5px;
-	border: 1px solid rgba(255, 255, 255, 0.07);
+	border: 1px solid var(--primary-color);
 	padding: 22px 25px;
 	padding-right: 55px;
 }
@@ -1243,7 +1244,7 @@ section:has(.rounded-section) {
 }
 
 .action-box.action-box-style-02 .action-box-content .title {
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	font-size: 36px;
 	font-weight: 700;
 	text-transform: capitalize;
@@ -1772,7 +1773,7 @@ section:has(.rounded-section) {
 }
 
 .service-fancy .service-item .service-title {
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 42px;
@@ -1934,7 +1935,7 @@ section:has(.rounded-section) {
 	font-size: 22px;
 	line-height: 32px;
 	font-weight: 600;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	color: var(--white-color);
 	display: inline-block;
 }
@@ -2266,14 +2267,14 @@ section:has(.rounded-section) {
 	padding: 10px;
 	display: inline-block;
 	color: black;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	font-size: 20px;
 	line-height: 28px;
 	font-weight: 600;
 }
 
 .counter .counter-number {
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	display: flex;
 	align-items: center;
 	gap: 3px;
@@ -2433,7 +2434,7 @@ section:has(.rounded-section) {
 
 .trusted-client {
 	font-size: 20px;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	font-weight: 600;
 	line-height: 32px;
 	margin-bottom: 40px;
@@ -2967,7 +2968,7 @@ section:has(.rounded-section) {
 
 .pricing-box .pricing-header .title {
 	color: #000000;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	font-size: 32px;
 	font-weight: 600;
 	line-height: 42px;
@@ -2993,7 +2994,7 @@ section:has(.rounded-section) {
 .pricing-box .pricing-price .price-currency {
 	font-size: 18px;
 	font-weight: 600;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	line-height: 1;
 	align-self: flex-start;
 	color: #000000;
@@ -3005,7 +3006,7 @@ section:has(.rounded-section) {
 	font-weight: 600;
 	line-height: .8;
 	color: #000000;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 }
 
 .pricing-box .pricing-price .after-price {
@@ -3024,7 +3025,7 @@ section:has(.rounded-section) {
 	font-weight: 600;
 	margin-top: 7px;
 	color: #000000;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	line-height: normal;
 	letter-spacing: normal;
 	text-transform: none;
@@ -3958,12 +3959,13 @@ input[type="search"]::-webkit-search-cancel-button {
   List style
 *****************************/
 .list-wrapper .list {
-	padding: 0;
+	padding: 15px;
 	margin: 0;
 	display: flex;
 	gap: 10px;
 	flex-direction: column;
 	list-style-type: none;
+	height: 360px;
 }
 
 .list-wrapper .list li {
@@ -4058,7 +4060,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .marquee-wrapper .marquee-inner .marquee-item .title {
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	font-size: 80px;
 	font-weight: 700;
 	line-height: normal;
@@ -4429,7 +4431,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .video-wrapper.video-style-2 .video-btn-wrapper span {
 	font-size: 20px;
 	line-height: 32px;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	font-weight: 600;
 	color: var(--white-color);
 }
@@ -5266,7 +5268,7 @@ header.header.header-sticky.is-sticky .navbar .navbar-brand img.sticky {
 .main-banner-1 .banner-content .banner-info .call-center-box a {
 	font-size: 22px;
 	line-height: 32px;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	font-weight: 600;
 	color: var(--white-color);
 }
@@ -5344,7 +5346,7 @@ header.header.header-sticky.is-sticky .navbar .navbar-brand img.sticky {
 	align-items: center;
 	margin-bottom: 15px;
 	text-transform: uppercase;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 }
 
 .main-banner.main-banner-2 .banner-conent .title {
@@ -6131,7 +6133,7 @@ body:has(#search.open):before {
 }
 
 .coming-soon-section .countdown-wrapper .countdown span {
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 }
 
 .inner-content {
@@ -6149,7 +6151,7 @@ body:has(#search.open):before {
 	line-height: 70px;
 	font-weight: 700;
 	color: var(--white-color);
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 }
 
 .coming-soon-description {
@@ -7053,7 +7055,7 @@ body:has(#search.open):before {
 	font-size: 20px;
 	line-height: 26px;
 	font-weight: bold;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	color: var(--white-color);
 }
 
@@ -8271,7 +8273,7 @@ body:has(#search.open):before {
 
 .widget-recent-posts .recent-posts .post-info .post-title {
 	color: #000000;
-	font-family: "Bai Jamjuree", serif;
+	font-family: var(--font-family);
 	font-size: 18px;
 	line-height: 24px;
 	display: -webkit-box;
