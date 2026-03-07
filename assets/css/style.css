@@ -270,9 +270,9 @@ figure.caption.alignright {
 	margin-bottom: 25px;
 }
 
-/*----------------------------------*/
+
 /* Section Title */
-/*----------------------------------*/
+
 .section-title {
 	margin-bottom: 50px;
 }
@@ -332,14 +332,14 @@ figure.caption.alignright {
 	padding-left: 30px;
 } */
 
-/* Title in BG Dark */
-.bg-dark .section-title p {
-	color: var(--white-color);
-}
 
-/*----------------------------------*/
+/* .bg-dark .section-title p {
+	color: var(--white-color);
+} */
+
+
 /* Breadcrumb */
-/*----------------------------------*/
+
 .breadcrumb {
 	margin-top: 18px;
 	background: transparent;
@@ -371,9 +371,8 @@ figure.caption.alignright {
 	color: var(--white-color);
 }
 
-/*----------------------------------*/
 /* Dropcaps */
-/*----------------------------------*/
+
 .dropcaps .dropcap-style-1 {
 	float: left;
 	text-align: center;
@@ -409,9 +408,8 @@ figure.caption.alignright {
 	width: 60px;
 }
 
-/*----------------------------------*/
 /* Blockquote */
-/*----------------------------------*/
+
 blockquote {
 	font-size: 20px;
 	line-height: 34px;
@@ -728,9 +726,7 @@ blockquote.blockquote-style-1 cite, blockquote.blockquote-style-1 p + p {
 	z-index: 100;
 }
 
-/*----------------------------*/
 /* Section Margin Padding */
-/*----------------------------*/
 .space-ptb {
 	padding-top: 130px;
 	padding-bottom: 130px;
@@ -1512,7 +1508,6 @@ section:has(.rounded-section) {
 	display: inline-block;
 	line-height: normal;
 	color: #000000;
-	font-family: "Jost", sans-serif;
 	font-weight: normal;
 }
 
@@ -1879,7 +1874,6 @@ section:has(.rounded-section) {
 	margin-bottom: 30px;
 	color: #cb0707;
 	border-radius: 10px;
-	padding-left: 6px;
 }
 
 .service-single .accordion.accordion-style-pgs-two .accordion-item .accordion-header .accordion-button {
@@ -2626,7 +2620,6 @@ section:has(.rounded-section) {
 	font-size: 18px;
 	line-height: 28px;
 	font-weight: 600;
-	font-family: "Jost", sans-serif;
 	display: flex;
 	align-items: start;
 }
@@ -2901,7 +2894,6 @@ section:has(.rounded-section) {
 	padding: 10px 20px;
 	font-weight: normal;
 	background-color: var(--primary-color);
-	font-family: "Jost", sans-serif;
 	border-radius: 10px 10px 10px 0px;
 }
 
@@ -3034,27 +3026,25 @@ section:has(.rounded-section) {
 .pricing-content {
 	max-height: 200px;
 	overflow-y: auto;
-	scrollbar-width: thin;
- /* for Firefox */;
 }
 
-/* For Chrome, Edge, Safari */
+
 .pricing-content::-webkit-scrollbar {
-	width: 12px;
- /* Increase scrollbar width here */;
+    width: 6px;
 }
 
 .pricing-content::-webkit-scrollbar-track {
-	background: #f1f1f1;
- /* Track color */;
+    background: #e8e8e8;
 }
 
+.pricing-content#scrollUp::-webkit-scrollbar-thumb:hover {
+    background: #fb5496;
+} 
+
 .pricing-content::-webkit-scrollbar-thumb {
-	background-color: #bbb;
- /* Scroll handle color */
-	border-radius: 6px;
-	border: 2px solid #f1f1f1;
- /* Optional: border inside track */;
+    background-image: -webkit-linear-gradient(45deg, #ffbd84, #ec2b19);
+    background-image: -o-linear-gradient(45deg, #ffbd84, #ec2b19);
+    background-image: linear-gradient(45deg, #ffbd84, #ec2b19);
 }
 
 .pricing-box .pricing-content .package-desc {
@@ -3071,7 +3061,6 @@ section:has(.rounded-section) {
 }
 
 .pricing-box .pricing-content .package-list li {
-	font-family: "Jost", sans-serif;
 	font-size: 17px;
 	font-weight: 400;
 	line-height: 30px;
@@ -3955,9 +3944,6 @@ input[type="search"]::-webkit-search-cancel-button {
 	background: var(--primary-color);
 }
 
-/*****************************
-  List style
-*****************************/
 .list-wrapper .list {
 	padding: 15px;
 	margin: 0;
@@ -3971,7 +3957,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .list-wrapper .list li {
 	display: flex;
 	gap: 15px;
-	align-items: baseline;
+	align-items: center;
 	font-weight: 400;
 }
 
@@ -4783,7 +4769,6 @@ header.header.header-sticky.is-sticky .navbar .navbar-brand img.sticky {
 	border-radius: 0px;
 	position: relative;
 	color: var(--primary-color);
-	font-family: "Jost", sans-serif;
 }
 
 .navbar .dropdown > .dropdown-menu li > a .menu-item-description {
@@ -5442,17 +5427,14 @@ header.header.header-sticky.is-sticky .navbar .navbar-brand img.sticky {
 	}
 }
 
-/*------------------------------*/
 /* Responsive CSS */
-/*------------------------------*/
 
 .main-banner-1 .banner-content .title {
 	color: white;
 }
 
-/*****************************
-	Layout
-*****************************/
+/* Layout */
+
 /* Sticky column */
 .is-sticky {
 	position: -webkit-sticky;
@@ -5460,9 +5442,8 @@ header.header.header-sticky.is-sticky .navbar .navbar-brand img.sticky {
 	top: 130px;
 }
 
-/*----------------------------------*/
+
 /* Scrollbar */
-/*----------------------------------*/
 
 ::-webkit-scrollbar {
 	width: var(--scrollbar-width) !important;
@@ -5486,16 +5467,14 @@ header.header.header-sticky.is-sticky .navbar .navbar-brand img.sticky {
 	background-color: var(--primary-color);
 }
 
-/*----------------------------------*/
 /* Jarallax */
-/*----------------------------------*/
+
 #jarallax-container-0 {
 	border-radius: 30px;
 }
 
-/*----------------------------------*/
 /* Search */
-/*----------------------------------*/
+
 .search ul li a {
 	color: #000000;
 }
@@ -5745,9 +5724,9 @@ body:has(#search.open):before {
 	padding: 15px 20px;
 }
 
-/*----------------------------------*/
+
 /* Back To Top */
-/*----------------------------------*/
+
 .back-to-top {
 	position: fixed;
 	z-index: 99;
@@ -5794,9 +5773,8 @@ body:has(#search.open):before {
 	transform: translateY(0);
 }
 
-/*----------------------------------*/
 /* Call Center Box */
-/*----------------------------------*/
+
 .call-center-box {
 	display: flex;
 	align-items: center;
@@ -5845,9 +5823,8 @@ body:has(#search.open):before {
 	color: var(--primary-color);
 }
 
-/*----------------------------------*/
 /* Contact Us */
-/*----------------------------------*/
+
 .contact-icon-box .icon-box-info .title {
 	margin-bottom: 25px;
 }
@@ -5965,9 +5942,8 @@ body:has(#search.open):before {
 	border-color: var(--primary-color);
 }
 
-/*----------------------------------*/
 /* WOW : animation */
-/*----------------------------------*/
+
 .pgsUpToDown {
 	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 	-webkit-transition: all 0.8s;
@@ -6020,9 +5996,9 @@ body:has(#search.open):before {
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-/*----------------------------------*/
+
 /* Map : Contact Us */
-/*----------------------------------*/
+
 .map {
 	height: 605px;
 	border-radius: 25px;
@@ -6036,9 +6012,8 @@ body:has(#search.open):before {
 	;
 }
 
-/*----------------------------------*/
 /* 404 Page */
-/*----------------------------------*/
+
 .error-section {
 	position: relative;
 }
@@ -6093,9 +6068,8 @@ body:has(#search.open):before {
 	color: transparent;
 }
 
-/*----------------------------------*/
-/* login */
-/*----------------------------------*/
+/* Login */
+
 .login-form {
 	padding: 30px;
 	border: 1px solid rgba(131, 131, 131, 0.25);
@@ -6108,9 +6082,8 @@ body:has(#search.open):before {
 	color: var(--white-color);
 }
 
-/*----------------------------------*/
 /* Coming Soon */
-/*----------------------------------*/
+
 .coming-soon-section {
 	display: flex;
 	align-items: center;
@@ -6359,9 +6332,7 @@ body:has(#search.open):before {
 	}
 }
 
-/*----------------------------------*/
 /* Keyframes */
-/*----------------------------------*/
 @keyframes run {
 	0% {
 		top: -50%;
@@ -6372,9 +6343,8 @@ body:has(#search.open):before {
 	}
 }
 
-/*************************
-       Blog
-*************************/
+/* Blog */
+
 .blog-post .blog-post-img {
 	overflow: hidden;
 	border-radius: 25px;
@@ -7157,7 +7127,6 @@ body:has(#search.open):before {
 	line-height: 39px;
 	color: var(--white-color);
 	font-weight: 700;
-	font-family: "Jost", sans-serif;
 }
 
 .shop-single .product-detail .product-prize del {
@@ -7629,7 +7598,6 @@ body:has(#search.open):before {
 	line-height: 26px;
 	color: var(--primary-color);
 	font-weight: 500;
-	font-family: "Jost", sans-serif;
 }
 
 .cart-table .cart-product-prices .product-min-price del {
@@ -8462,7 +8430,6 @@ body:has(#search.open):before {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: "Jost", sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	text-transform: capitalize;
