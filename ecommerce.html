@@ -323,46 +323,47 @@
 										<i class="fa-solid fa-chevron-down"></i>
 									</a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li>
-											<a class="dropdown-item" href="graphic-design.html">
-												<span>Designing</span>
-											</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="website-development.html">
-												<span>Web development</span>
-											</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="social-media-marketing.html">
-												<span>Social Media Marketing</span>
-											</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="seo.html">
-												<span>SEO Managment</span>
-											</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="email-marketing.html">
-												<span>E-MAIL Marketing</span>
-											</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="paid-marketing.html">
-												<span>PPC Managment Services</span>
-											</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="ecommerce.html">
-												<span>e-commerce-project-managment</span>
-											</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="animation.html">
-												<span>Animation</span>
-											</a>
-										</li>
+	<li>
+		<a class="dropdown-item" href="graphic-design.html">
+			<span>Designing</span>
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="website-development.html">
+			<span>Web development</span>
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="social-media-marketing.html">
+			<span>Social Media Marketing</span>
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="seo.html">
+			<span>SEO Managment</span>
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="email-marketing.html">
+			<span>E-MAIL Marketing</span>
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="paid-marketing.html">
+			<span>PPC Managment Services</span>
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="ecommerce.html">
+			<span>e-commerce-project-managment</span>
+		</a>
+	</li>
+	<li>
+		<a class="dropdown-item" href="animation.html">
+			<span>Animation</span>
+		</a>
+	</li>
+</ul>
 								</li>
 
 								<li class="nav-item">
@@ -490,7 +491,7 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
-									<h1 class="title text-white">ECommerce Management Services</h1>
+									<h1 class="title text-white">E-Commerce Management Services</h1>
 								</div>
 							</div>
 						</div>
@@ -1277,11 +1278,7 @@
 		<script src="assets/js/custom.js"></script>
         <script>
             const blogsContainer = document.getElementById('blogs');
-
-            // ✅ Original API URL
             const BASE_API = 'https://blog.appsnation.co/api/get-blogs-api.php?category=e-commerce-app';
-
-            // ✅ CORS Proxy that doesn't need manual activation
             const PROXY = 'https://corsproxy.io/?';
             const proxiedUrl = PROXY + encodeURIComponent(BASE_API);
 
@@ -1291,7 +1288,7 @@
                 return res.json();
             })
             .then(response => {
-                blogsContainer.innerHTML = ''; // Clear "Loading.." message
+                blogsContainer.innerHTML = '';
 
                 const blogs = response.data;
 
@@ -1304,7 +1301,6 @@
                 const blogDiv = document.createElement('div');
                 blogDiv.className = 'blog';
 
-                // ✅ Build full image URL (it's relative in the response)
                 const imageUrl = `https://blog.appsnation.co/wp-content/uploads/${blog.featured_image_url}`;
 
                 
