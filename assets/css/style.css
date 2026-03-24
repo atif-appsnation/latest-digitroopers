@@ -7842,7 +7842,7 @@ body:has(#search.open):before {
 	box-sizing: border-box;
 	width: 100vw;
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 0rem;
 	overflow-x: hidden;
 	mask-image: linear-gradient(
 		90deg,
@@ -8552,4 +8552,8 @@ body:has(#search.open):before {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: gray;
 }
