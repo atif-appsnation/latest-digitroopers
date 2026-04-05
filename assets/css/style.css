@@ -475,7 +475,7 @@ blockquote.blockquote-style-1 .blockquote-content .blockquote-author .blockquote
 
 blockquote.blockquote-style-1:before {
 	content: "\f10d";
-	font-family: "Font Awesome 6 Free";
+	font-family: "Font Awesome 6 Pro";
 	font-weight: 900;
 	position: absolute;
 	top: 30px;
@@ -1061,7 +1061,7 @@ section:has(.rounded-section) {
 .accordion .accordion-item .accordion-header .accordion-button:after {
 	content: "\2b";
 	background-image: inherit;
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Font Awesome 5 Pro';
 	font-size: 18px;
 	font-weight: 600;
 	color: var(--white-color);
@@ -1100,7 +1100,7 @@ section:has(.rounded-section) {
 
 .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed):after {
 	content: "\f068";
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Font Awesome 5 Pro';
 	font-size: 38px;
 	color: var(--white-color);
 	background-color: var(--third-color);
@@ -1118,7 +1118,7 @@ section:has(.rounded-section) {
 	padding-right: 30px;
 	padding-bottom: 15px;
 	padding-left: 0px;
-	color: #696666;
+	color: var(--black-color);
 	margin-bottom: 25px;
 }
 
@@ -1169,7 +1169,7 @@ section:has(.rounded-section) {
 
 .accordion.accordion-style-pgs-two .accordion-item .accordion-header .accordion-button:not(.collapsed):after {
 	content: "\f068";
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Font Awesome 5 Pro';
 	color: var(--white-color);
 }
 
@@ -1772,7 +1772,7 @@ section:has(.rounded-section) {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 42px;
-	color: #060606;
+	color: var(--black-color);
 	margin-bottom: 0px;
 }
 
@@ -2646,7 +2646,7 @@ section:has(.rounded-section) {
 	font-weight: 600;
 	position: absolute;
 	transform: translate(-50%, -50%);
-	font-family: "Font Awesome 6 Free";
+	font-family: "Font Awesome 6 Pro";
 }
 
 /*****************************
@@ -2775,7 +2775,7 @@ section:has(.rounded-section) {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 400;
-	color: #060606;
+	color: var(--black-color);
 	background: inherit;
 	border: none;
 	border: 1px solid rgba(131, 131, 131, 0.25);
@@ -5053,7 +5053,7 @@ header.header.header-sticky.is-sticky .navbar .navbar-brand img.sticky {
 .main-menu-offcanvas .offcanvas-body .navbar .navbar-nav .nav-item a.dropdown-toggle:before {
 	position: absolute;
 	content: "\f078";
-	font-family: 'Font Awesome 6 Free';
+	font-family: 'Font Awesome 6 Pro';
 	font-size: 13px !important;
 	font-weight: 900;
 	color: var(--white-color);
@@ -5545,7 +5545,7 @@ header.header.header-sticky.is-sticky .navbar .navbar-brand img.sticky {
 #search .close:before {
 	position: absolute;
 	content: "\f00d";
-	font-family: "Font Awesome 6 Free";
+	font-family: "Font Awesome 6 Pro";
 	font-weight: 900;
 	z-index: -1;
 }
@@ -5634,7 +5634,7 @@ body:has(#search.open):before {
 
 .select2-container--default .select2-selection--single .select2-selection__arrow:before {
 	content: "\f078";
-	font-family: "Font Awesome 6 free";
+	font-family: "Font Awesome 6 Pro";
 	font-style: normal;
 	font-weight: 900;
 	color: var(--primary-color);
@@ -5746,7 +5746,7 @@ body:has(#search.open):before {
 
 .back-to-top::before {
 	position: absolute;
-	font-family: "Font Awesome 6 Free";
+	font-family: "Font Awesome 6 Pro";
 	content: "\f062";
 	text-align: center;
 	line-height: 55px;
@@ -6781,7 +6781,7 @@ body:has(#search.open):before {
 
 .blog-single .post-navigation .nav-links:before {
 	content: "\f58d";
-	font-family: "Font Awesome 6 Free";
+	font-family: "Font Awesome 6 Pro";
 	font-weight: 900;
 	font-size: 20px;
 	position: absolute;
