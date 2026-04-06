@@ -135,12 +135,12 @@
 }
 
 .night body .contact-form-box {
-	background-color: #cb0707;
+	background-color: var(--primary-color);
 }
 
 .night body .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
 	background-color: #000f2200;
-	color: #cb0707;
+	color: var(--primary-color);
 }
 
 .night body .accordion .accordion-item .accordion-header .accordion-button {
@@ -268,7 +268,7 @@
 }
 
 .night body .widget-categories .widget-title {
-	color: #cb0707;
+	color: var(--primary-color);
 }
 
 .night body .widget-categories .categories-list li a {
@@ -280,15 +280,15 @@
 }
 
 .night body .widget-recent-posts .recent-posts .post-info .post-date {
-	color: #cb0707;
+	color: var(--primary-color);
 }
 
 .night body .widget-recent-posts .widget-title {
-	color: #cb0707;
+	color: var(--primary-color);
 }
 
 .night body .contact-info-box .title {
-	color: #cb0707;
+	color: var(--primary-color);
 }
 
 .night body   .tags-widget .tag-list li a {
@@ -296,15 +296,15 @@
 }
 
 .night body  .tags-widget .tag-list li a:hover {
-	color: #cb0707;
+	color: var(--primary-color);
 }
 
 .night body  .tags-widget .widget-title {
-	color: #cb0707;
+	color: var(--primary-color);
 }
 
 .night body  .widget-newsletter .widget-title {
-	color: #cb0707;
+	color: var(--primary-color);
 }
 
 .night body .widget-search .search .form-control {
@@ -376,5 +376,17 @@
 }
 
 .night .service-fancy .service-item .service-title {
+	color: var(--white-color);
+}
+
+.night .hamburger .hamburger-container .hamburger-inner {
+	color: var(--white-color)
+}
+
+.night .section-title p {
+    color: var(--white-color);
+}
+
+.night p {
 	color: var(--white-color);
 }
