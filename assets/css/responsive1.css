@@ -1,0 +1,50 @@
+@media (max-width: 767px) {
+
+	.header.header {
+        padding: 0 12px !important;
+    }
+
+	.header .main-header {
+        padding: 0px 0px !important;
+    }
+
+	.main-banner-1 .banner-content .title {
+		font-size: 42px !important;
+	}
+
+	.main-banner-1 .banner-content {
+        width: 100% !important;
+    }
+
+	.main-banner-1 .banner-content .description {
+        margin-bottom: 15px !important;
+        width: 100% !important;
+        line-height: 28px !important;
+    }
+
+	.main-banner-1 .banner-content .banner-info .get-started-btn .btn {
+        font-size: 16px !important;
+        line-height: 28px !important;
+        padding: 12px 35px !important;
+        margin-bottom: 20px !important;
+    }
+
+	.grid-wrapper.grid-lg-2 {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+	.tech-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+	.grid-wrapper.grid-xs-1 {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+
+@media (max-width: 991px) {
+    section:has(.rounded-section) {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+}

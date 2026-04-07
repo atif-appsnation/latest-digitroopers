@@ -3,7 +3,7 @@
 	--secondary-color: #0E36A8;
 	--third-color: #EDD6D6;
 	--white-color: #ffffff;
-	--black-color: var(--white-color);;
+	--black-color: #000000;
 	--bg-color: #f5f5f5;
 	--font-family: "Jost", sans-serif
 }
@@ -110,7 +110,7 @@ h6,
 .h6 {
 	font-family: var(--font-family);
 	font-weight: 700;
-	color: var(--white-color);;
+	color: var(--black-color);;
 	margin: 0px 0px 1rem;
 }
 
@@ -300,7 +300,7 @@ figure.caption.alignright {
 	color: var(--primary-color);
 	/* border-left: 9px solid var(--secondary-color); */
 	border-radius: 10px;
-	padding-left: 6px;
+	/* padding-left: 6px; */
 	margin-bottom: 0;
 	text-transform: capitalize;
 }
@@ -519,7 +519,7 @@ blockquote.blockquote-style-1 cite, blockquote.blockquote-style-1 p + p {
 }
 
 .text-dark {
-	color: var(--white-color); !important;
+	color: var(--white-color) !important;
 }
 
 /* fill colors for svg */
@@ -556,7 +556,7 @@ blockquote.blockquote-style-1 cite, blockquote.blockquote-style-1 p + p {
 }
 
 .bg-black {
-	background-color: var(--white-color); !important;
+	background-color: var(--white-color) !important;
 }
 
 .bg-primary-gradient {
@@ -1053,7 +1053,7 @@ section:has(.rounded-section) {
 	padding-right: 70px;
 	background-color: inherit;
 	border: 0;
-	color: var(--white-color);;
+	color: var(--black-color);
 	border-radius: 12px;
 }
 
@@ -1064,12 +1064,12 @@ section:has(.rounded-section) {
 	font-size: 18px;
 	font-weight: 600;
 	color: var(--white-color);
-	background-color: var(--white-color);;
+	background-color: var(--black-color);;
 	border-radius: 12px;
-	padding: 30px;
+	/* padding: 30px; */
 	margin-left: 22px;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	border: 0;
 	position: absolute;
 	right: 0;
@@ -1100,10 +1100,10 @@ section:has(.rounded-section) {
 .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed):after {
 	content: "\f068";
 	font-family: 'Font Awesome 5 Pro';
-	font-size: 38px;
+	font-size: 18px;
 	color: var(--white-color);
-	background-color: var(--third-color);
-	height: 50px;
+	background-color: var(--primary-color);
+	height: 30px;
 }
 
 .accordion .accordion-item .accordion-button:focus {
@@ -1496,7 +1496,7 @@ section:has(.rounded-section) {
 
 .contact-info-box ul li {
 	line-height: 30px;
-	color: var(--white-color);;
+	color: var(--black-color);;
 }
 
 .contact-info-box ul li:last-child {
@@ -1506,7 +1506,7 @@ section:has(.rounded-section) {
 .contact-info-box ul li a {
 	display: inline-block;
 	line-height: normal;
-	color: var(--white-color);;
+	color: var(--black-color);;
 	font-weight: normal;
 }
 
@@ -1514,10 +1514,8 @@ section:has(.rounded-section) {
 	color: var(--primary-color);
 }
 
-/*****************************
-	Services
-*****************************/
-/* Service Style 1 */
+/** Services **/
+
 .service-item {
 	position: relative;
 	margin: 0;
@@ -1525,7 +1523,7 @@ section:has(.rounded-section) {
 	background: var(--white-color);
 	border: 1px solid rgba(131, 131, 131, 0.25);
 	border-radius: 20px;
-	height: 105%;
+	/* height: 105%; */
 	transition: all 0.3s ease-in-out;
 }
 
@@ -1581,12 +1579,12 @@ section:has(.rounded-section) {
 	margin-bottom: 35px;
 }
 
-.service-action {
+/* .service-action {
 	position: absolute;
 	bottom: 25px;
-	/* left: 30px; */
+	left: 30px;
 	right: 30px;
-}
+} */
 
 .service-item .service-content .service-action {
 	transition: all 0.3s ease-in-out;
@@ -4978,15 +4976,15 @@ header.header.header-sticky.is-sticky .navbar .navbar-brand img.sticky {
 }
 
 .mobile-action .mobile-hamburger .hamburger .hamburger-container .hamburger-inner {
-	background-color: var(--white-color);;
+	background-color: var(--black-color);;
 }
 
 .mobile-action .mobile-hamburger .hamburger .hamburger-container .hamburger-inner:before {
-	background-color: var(--white-color);;
+	background-color: var(--black-color);;
 }
 
 .mobile-action .mobile-hamburger .hamburger .hamburger-container .hamburger-inner:after {
-	background-color: var(--white-color);;
+	background-color: var(--black-color);;
 }
 
 .mobile-action .mobile-hamburger .hamburger .hamburger-container .hamburger-hidden {
@@ -5834,7 +5832,7 @@ body:has(#search.open):before {
 }
 
 .contact-icon-box .icon-box-info ul li a {
-	color: var(--white-color);;
+	color: var(--black-color);;
 }
 
 .contact-icon-box .icon-box-info ul li a:hover {
@@ -5842,7 +5840,7 @@ body:has(#search.open):before {
 }
 
 .contact-icon-box .icon-box-info .widget-social .social-icon li a {
-	color: var(--white-color);;
+	color: var(--black-color);;
 }
 
 .contact-icon-box .icon-box-info .widget-social .social-icon li a:hover {
@@ -7875,7 +7873,7 @@ body:has(#search.open):before {
 	/* display: flex;
 	align-items: center;
 	justify-content: center; */
-	width: 300px;
+	/* width: 300px; */
 	/* height: 390px; */
 	background-color: white;
 	border: 2px solid #aaa;
